@@ -32,7 +32,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Gender)
+            @(Html.DisplayFor(model => model.Gender).ToString() == "0" ? "Male" : "Female")
         </dd>
 
         <dt>
